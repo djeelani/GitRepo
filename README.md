@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [![CircleCI](https://circleci.com/gh/CognizantStudio/trade-finance-client/tree/master.svg?style=svg&circle-token=94f403cac177feb611d4ff2be7f5bf639e11f8ad)](https://circleci.com/gh/CognizantStudio/trade-finance-client/tree/master)
 
 # Trade and Supply Finance Client App
@@ -50,3 +51,4 @@ Heroku Git URL>`
 
 Test
 Test2 3
+Vishal Changes
