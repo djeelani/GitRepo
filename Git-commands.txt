@@ -1,0 +1,30 @@
+git checkout master : Switch to master branch
+
+git pull origin master : Pull latest from master branch to master branch
+
+git checkout f/143363949-glossary : Switch to feature branch
+
+git pull --rebase origin master : Pull and rebase master in feature branch
+
+Once conflicts are resolved....
+
+git add *.* : Stage files modified
+
+git commit -m "<msg>" : Commit to feature branch
+
+git push origin f/143363949-glossary : Push to feature branch
+
+-------------------------
+
+git branch -l : List of branches
+
+===========================
+** No jquery
+** No commented code
+** Add files which dont need commit frequently to .gitignore
+** Appropriate file names
+** Proper prefix for class names in a file
+** Try not to use !important
+** 2spaces per tab
+
+=======================
