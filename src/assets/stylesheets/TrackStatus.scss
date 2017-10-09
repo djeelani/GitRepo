@@ -1,0 +1,101 @@
+@import "./variables.scss";
+
+.track-status {
+  .track_status__dialog-header {
+    padding-bottom: 37px;
+  }
+
+  .track-status__reject-icon {
+    color: $red;
+  }
+
+  .track-status__po-number {
+    color:$primary-blue;
+    font-size: 18px;
+    position: fixed;
+  }
+
+
+  .track-status__table {
+    .track-status__tablerow {
+      border-bottom: 0em !important;
+    }
+
+    .track-status__table-column-header {
+      font-size: 19px;
+      font-weight: bold;
+      padding-left: 69px;
+      color: $gray-text;
+    }
+  }
+
+  .track-status__table-column-date-header {
+    font-size: 19px;
+    font-weight: bold;
+    color: $gray-text;
+    padding-left: 22px;
+  }
+
+  .track-status__table-column-role {
+    padding-left: 61px;
+    align-content: center;
+    color: $gray-text;
+    font-size: 18px;
+    font-weight: 100;
+  }
+
+  .track-status__table-column-status {
+    padding-left: 69px;
+    align-content: center;
+    color: $gray-text;
+    font-size: 18px;
+    font-weight: 100;
+  }
+
+  .track-status__table-column-date {
+    padding-left: 22px;
+    align-content: center;
+    color: $gray-text;
+    font-size: 18px;
+    font-weight: 100;
+  }
+
+  .tr-odd {
+    background-color: $white;
+  }
+
+  .tr-even {
+    background-color: $off-white;
+  }
+}
+
+.track-status-dialog {
+  height: 550px;
+  min-width: 935px;
+  margin-top: 40px;
+  overflow: auto;
+
+  .track-status__dialog-title {
+    color: $primary-blue;
+    text-transform: uppercase;
+  }
+}
+
+.track-status-link {
+  color: $light-blue;
+  font-size: 14px;
+  cursor:pointer;
+  line-height: 22px;
+}
+
+.track-status-disable-link {
+  color: $disabled;
+  cursor: text;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.track-status__close-button {
+  cursor: pointer;
+  float: right;
+}

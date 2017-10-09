@@ -1,0 +1,12 @@
+{
+  "PND_CP_APR": "Transaction Initiated",
+  "DFT_APR": "Transaction Approved",
+  "PND_BNK_APR": "Transaction Approved",
+  "STARTED": "Transaction Approved",
+  "READY_SHIP": "Ready For Shipment",
+  "SHIPPED": "Items Shipped",
+  "DELIVERED": "Shipment Delivered",
+  "PAY_INIT": "Payment Initiated",
+  "PAY_RCVD": "Transaction Complete",
+  "REJECTED": "Rejected"
+}

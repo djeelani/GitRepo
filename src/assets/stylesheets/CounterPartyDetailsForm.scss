@@ -1,0 +1,45 @@
+@import "./variables.scss";
+
+.counter-party-details-form {
+  margin-top: #{$nav-bar-height + $application-header-height};
+
+  .counter-party-details-form__secondary-header {
+    text-align: center;
+    text-transform: uppercase;
+    color: $gray-text;
+  }
+
+  .counter-party-details-form__container {
+    padding-bottom: 60px;
+    text-align: center;
+  }
+
+  .counter-party-details-form__text-input {
+    margin: auto;
+    padding-bottom: 60px;
+    width: 50%;
+    
+    .md-floating-label--floating {
+      font-size: 14px;
+    }
+  }
+
+  .counter-party-details-form__search-form {
+    padding-top: 80px;
+  }
+
+  .md-background--primary-hover:hover{
+    background-color: $primary-blue;
+    color: $white;
+  }
+
+  .md-btn--raised-disabled{
+    background: rgba(0, 0, 0, 0.12);
+  }
+
+  .counter-party-details-form__error {
+    color: $red;
+    text-align: center;
+    margin-top: 5%;
+  }
+}

@@ -1,0 +1,30 @@
+.transaction-row {
+  padding: 0 !important;
+
+  .transaction-row__column {
+    width: 13.5%;
+  }
+
+  .transaction-row__column--status-icon {
+    width: 5%;
+  }
+
+  .transaction-row__column--role {
+    width: 11%;
+  }
+
+  .transaction-row__column--company-name {
+    width: 16.5%;
+  }
+
+  .transaction-row__column--padding-right {
+    padding-right: 1%;
+  }
+
+  .transaction-row__section--nowrap {
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

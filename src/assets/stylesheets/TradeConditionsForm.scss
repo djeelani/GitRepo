@@ -1,0 +1,52 @@
+@import "./variables.scss";
+
+.trade-condition-form {
+  width:45%;
+  margin: 48px auto;
+  text-align: center;
+
+  .trade-condition-form__header {
+    color: $dark-gray;
+  }
+
+  .trade-condition-form__checkbox-container {
+    flex: 2;
+    padding-left: 11%;
+  }
+
+  .trade-condition-form__checkbox {
+    flex: 1;
+    justify-content: center;
+
+    .md-selection-control-label {
+      font-size: 17px;
+    }
+
+    .md-btn .md-icon {
+      color: $primary-blue;
+    }
+  }
+
+  .trade-condition-form__button {
+    color: $primary-blue;
+    width: 259px;
+    height: 53.1px;
+    font-size: 25px;
+    line-height: 30px;
+    margin: 2% auto 0% auto;
+    text-align: center;
+    text-transform: capitalize;
+    border: 1px solid $primary-blue;
+    
+    &:hover:enabled {
+      color: $off-white;
+      background: $primary-blue;
+    }    
+  }
+
+  .trade-condition-form__button-style {
+    justify-content: space-around;
+    width: 166%;
+    margin-left: -33%;
+  }
+}

@@ -1,0 +1,229 @@
+@import "./variables.scss";
+
+.dashboard {
+  .dashboard__transaction-container {
+    margin: #{$nav-bar-height * 2} 5%;
+  }
+
+  .dashboard__transaction-header-text {
+    color: $light-blue;
+  }
+
+  .dashboard__draft-icon {
+    color: $red;
+  }
+
+  .dashboard__pending-icon {
+    color: $light-blue;
+  }
+
+  .dashboard__complete-icon {
+    color: $green;
+  }
+
+  .dashboard__transaction-row-h3 {
+    color: $gray-text;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    margin-left: 40px;
+    margin-bottom: 0;
+  }
+
+  .dashboard__transaction-row-document {
+    margin: 24px 0;
+  }
+
+  .dashboard__transaction-content-panel {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-height: 610px;
+    background-color: $off-white;
+  }
+
+  .md-expansion-panel--expanded:not(:last-child) {
+    margin-bottom: 0px;
+  }
+
+  .md-expansion-panel--expanded:not(:first-child) {
+    margin-top: 0px;
+    border-bottom: 1px solid;
+    border-color: $expansion;
+  }
+
+  .md-expansion-panel--expanded {
+    .dashboard__transaction-row-header {
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+    }
+  }
+
+  .md-expansion-panel-list {
+    padding-bottom: 1px;
+  }
+
+  .dashboard__transaction-content-icon {
+    display: none;
+  }
+
+  .md-dialog-footer {
+    display: none;
+  }
+
+  .dashboard__transaction-row-panel {
+    .dashboard__transaction-row-header {
+      border-bottom: 1px solid;
+      border-color: $expansion;
+
+      &:hover {
+        background-color: $expansion;
+      }
+
+      .md-panel-column {
+        width: 100%;
+      }
+    }
+  }
+
+  .dashboard__transaction-header {
+    background-color: $white;
+  }
+
+  .dashboard__transaction-header-panel {
+    .dashboard__transaction-expansion-panel-header {
+      border-bottom: 1px solid;
+      border-color: $expansion;
+
+      .md-panel-column {
+        width: 100%;
+      }
+    }
+
+    .dashboard__transaction-content-panel {
+      cursor: text;
+      display: none;
+    }
+  }
+
+  .dashboard__transaction-header-background--color {
+    background: $white;
+    .md-icon-text {
+      font-size: 14px;
+      color: $black;
+    }
+  }
+
+  .dashboard__transaction-trade-conditions {
+    margin: 24px 13.5%;
+  }
+
+  .dashboard__transaction-checkbox {
+    color: $disabled !important;
+  }
+
+  .dashboard__transaction-row-action {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 16%;
+  }
+
+  .dashboard__transaction-row-h4 {
+    color: $gray-text;
+    font-size: 17px;
+  }
+
+  .dashboard__transaction-row-buttons {
+    margin-top: 24px;
+  }
+
+  .dashboard_transaction-approve-button--width {
+    width: 25%;
+
+    .md-floating-label--active {
+      font-size: 14px;
+    }
+  }
+
+  .dashboard_transaction-reject-button--width {
+    margin-left: 22%;
+    margin-top: -49px;
+  }
+
+  .dashboard_transaction-btn {
+    border: 1px solid $primary-blue;
+    text-transform: capitalize;
+    font-size: x-large;
+    height: 50px;
+    transition: all;
+    min-width: 140px;
+    color: $primary-blue;
+
+    &:hover {
+        background-color: $primary-blue;
+        color: $white;
+      }
+
+    &:disabled {
+      background-color: $disabled;
+      color: $white;
+      border: 1px solid $expansion;
+
+      &:hover {
+        background-color: $disabled;
+        color: $white;
+      }
+    }
+  }
+
+  .dashboard_transaction-reject-button--lesswidth {
+    margin-left: 16%;
+    margin-top: -3.6em;
+  }
+
+  .dashboard-transaction-action__info {
+    color: $black;
+    font-weight: bold;
+  }
+
+  .dashboard-btn-upload-spinner {
+    margin-right: 74%;
+  }
+
+  .dashboard__transaction-header-sort--icon {
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    margin-bottom: 6px;
+    margin-left: -0.7em;
+  }
+
+  .dashboard__no-transactions {
+    position: absolute;
+    left: 41%;
+    transform: translateY(-40%);
+  }
+
+  .dashboard__no-transactions-spinner {
+    left: 46%;
+    position: absolute;
+    top: 0;
+  }
+
+  .dashboard_transaction-two-button-spinner {
+    margin-top: -4%;
+  }
+
+  .dashboard_transaction-one-button-spinner {
+    margin-top: -4%;
+    margin-left: 35%;
+  }
+
+  .dashboard__transaction-row-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .dashboard__required-action {
+    margin-top: 48px;
+  }
+}

@@ -1,0 +1,138 @@
+@import "./variables.scss";
+
+.upload-document {
+  .upload-document__anchor {
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    color: $gray-text;
+    margin-left: -30px;
+    text-decoration-line: none;
+  }
+
+  .upload-document__close-btn {
+    color: $primary-blue;
+  }
+
+  .upload-document__close-btn-icon{
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .upload-document__message {
+    color: $red;
+    margin-left: 36px;
+  }
+
+  .upload-dashboard-document__message {
+    color: $red;
+    display: inline-block;
+    font-size: 15px;
+    margin-left: 17%;
+    width: 100%;
+  }
+
+  .upload-document__multi-file {
+    font-size: 18px;
+    margin: $nav-bar-height auto 48px 5px;
+
+    .md-icon-text {
+      font-weight: 600;
+    }
+  }
+
+  .upload-document__file-list {
+    margin-left: 0%;
+
+    .upload-document__file {
+      width: 65%;
+      margin-left: 10%;
+    }
+
+    .upload-document__file-input {
+      width: 310%;
+      margin-left: -10%;
+      text-overflow: ellipsis;
+
+      &:disabled {
+        color: $dark-gray;
+      }
+    }
+
+    .md-text-field-icon-container {
+      border-bottom: 1px solid $dark-gray;
+    }
+
+    .md-text-field-divider-container {
+      margin-bottom: 1%;
+    }
+
+    .md-divider--text-field {
+      display: none;
+    }
+  }
+
+  .upload-document__file-icon {
+    color: $primary-blue;
+  }
+
+  .upload-document__remove-icon {
+    color: $primary-blue;
+    cursor: pointer;
+    margin-left: 58% !important;
+  }
+
+  .upload-document__multi-dashboard-file {
+    float: right;
+    margin-right: -16px; //Account for padding of button hover state
+  }
+
+  .upload-document__file-dashboard-file-list {
+    margin-left: 16%;
+
+    .upload-document__dashboard-file-input {
+      width: 250%;
+      margin-left: 5px;
+
+      &:disabled {
+        color: $light-blue;
+        font-size: 17px;
+      }
+    }
+
+    .upload-document__file-icon {
+      color: $light-blue;
+    }
+
+    .md-text-field-divider-container {
+      margin-bottom: -4px;
+      margin-left: 5px;
+    }
+
+    .md-text-field-icon-container {
+      border: 0;
+    }
+
+    .md-divider--text-field {
+      display: flex;
+      color: $light-blue;
+      background-color: $light-blue;
+      width: 260%;
+      margin-top: 3px;
+    }
+  }
+
+  .upload-document__file-dashboard-file-emptylist {
+    margin-left: 16%;
+    color: $gray-text;
+  }
+}

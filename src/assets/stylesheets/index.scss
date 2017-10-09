@@ -1,0 +1,54 @@
+@import "./variables";
+
+@import "~react-md/src/scss/react-md";
+
+$md-primary-color: $primary-blue;
+$md-secondary-color: $light-blue;
+$md-font-family: "ProximaNova";
+
+@include react-md-everything;
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-size: 17px;
+}
+
+.font_size__normal {
+  font-size: 17px;
+}
+
+.md-no-scroll.md-no-scroll {
+  position: relative;
+}
+
+.md-circular-progress-path {
+  stroke: $primary-blue;
+}
+
+.btn {
+  border: 1px solid $primary-blue;
+  text-transform: capitalize;
+  font-size: x-large;
+  height: 50px;
+  transition: all;
+
+  &:disabled {
+    border: 1px solid $light-gray;
+
+    &:hover {
+      background-color: $off-white;
+      color: $light-gray;
+      box-shadow: none;
+    }
+  }
+
+  &:hover {
+    background-color: $primary-blue;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
+    color: $white;
+  }
+}

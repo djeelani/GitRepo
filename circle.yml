@@ -1,0 +1,13 @@
+test:
+  pre:
+    - npm run lint
+    - npm run sass-lint
+    - yarn install
+  override:
+    - yarn test:once
+  post:
+    - mkdir -p $CIRCLE_TEST_REPORTS/junit/
+    - find . -type f -regex ".*/junit.xml" -exec cp {} $CIRCLE_TEST_REPORTS/junit/ \;
+notify:
+  webhooks:
+    - url: https://heartbeat2-publisher.herokuapp.com/api/WebHookParse?repo_id=5&circleci_api_token=3a3033e76743049d0fff3304cf12501e0bffead0

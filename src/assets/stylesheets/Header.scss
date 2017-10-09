@@ -1,0 +1,62 @@
+@import "./variables.scss";
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+
+  .header__toolbar {
+    font-weight: bold;
+
+    &.seller {
+      background: $green;
+    }
+
+    &.buyer {
+      background: $primary-blue;
+    }
+  }
+
+  .header__nav-button-hide {
+    display: none;
+  }
+
+  .header__nav-button {
+    padding: 23px 32px;
+    height: $nav-bar-height;
+    font-size: 18px;
+    line-height: 18px;
+    margin: 0 !important;
+    opacity: 0.5;
+
+    &.not-clickable {
+      cursor: auto;
+
+      &:hover {
+        background-color: transparent;
+        opacity: 0.5;
+      }
+    }
+
+    &:last-child {
+      margin-right: inherit;
+    }
+
+    &:hover {
+      background-color: $white-20;
+      opacity: 1;
+    }
+
+    &.active {
+      font-weight: bold;
+      opacity: 1;
+    }
+  }
+
+  .header__user-role {
+    color: $white;
+    margin-top: 14px;
+  }
+}

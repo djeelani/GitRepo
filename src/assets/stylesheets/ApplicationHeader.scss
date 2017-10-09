@@ -1,0 +1,26 @@
+@import "./variables.scss";
+
+.application-header {
+  .application-header__button {
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+    color: $gray-text;
+
+    &.active {
+      font-weight: bold;
+    }
+  }
+
+  .application-header__container {
+    border-bottom: 1px solid $light-gray;
+    color: $gray-text;
+    position: fixed;
+    top: $nav-bar-height;
+    padding: 30px 0 20px;
+    left: 12.5%;
+    right: 12.5%;
+    background-color: $off-white;
+    z-index: 2;
+  }
+}

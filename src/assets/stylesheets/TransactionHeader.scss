@@ -1,0 +1,31 @@
+@import "./variables.scss";
+
+.transaction-header {
+  width: 100% !important;
+  padding: 0 !important;
+
+  .transaction-header__column {
+    width: 13.5%;
+  }
+
+  .transaction-header__column--status-icon {
+    width: 5%;
+  }
+
+  .transaction-header__column--role {
+    width: 11%;
+  }
+
+  .transaction-header__column--company-name {
+    width: 16.5%;
+  }
+
+  .transaction-header__column--padding-right {
+    padding-right: 1%;
+  }
+
+  .transaction-header__section {
+    font-weight: bold;
+    color: $gray-text;
+  }
+}

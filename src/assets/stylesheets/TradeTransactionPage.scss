@@ -1,0 +1,15 @@
+@import "./variables.scss";
+
+.trade-txn-page {
+  .trade-txn-page__container {
+    margin-top: #{$nav-bar-height * 3};
+  }
+
+  // .counter-party-details__buyer-company-name {
+  //   font-size: 20px;
+  // }
+
+  // .counter-party-details__seller-company-name {
+  //   font-size: 20px;
+  // }
+}
